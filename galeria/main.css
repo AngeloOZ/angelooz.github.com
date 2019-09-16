@@ -1,31 +1,53 @@
 body{
     margin: 0px;
     padding: 0px;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(119deg, #8EC5FC 23%, #E0C3FC 56%);
 }
 .title{
-    background-color: blueviolet;
+    color: white;
+    width: 100%;
     text-align: center;
-}
-.Contenedor{
-    display: grid;
-    grid-gap: 10px;
-    padding: 10px;
+    padding: 0px;
+    margin: 0px;
 }
 .galeria{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, auto);
-    grid-gap: 10px;
+    margin: auto;
+    padding: 20px;
+}
+.imagen{
+    width: 100%;
+    height: 100%;
 }
 .Polaroid{
-    width: 100%;
-    min-height: 300px;
-    display: grid;
-    background-color: aquamarine;
+    position: relative;
+    width: 280px;
+    max-height: 300px;  
+    padding: 10px 10px 30px 10px;
+    background-color: white;
+    margin: auto;
+    margin-bottom: 25px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0,.5);
+    display: inline-block;
+    transition: transform 1s;
+    transition-delay: 1s;
 }
-
+.Polaroid img{
+    cursor: pointer;
+    filter: brightness(0.1);
+}
+.Polaroid img:hover{
+    filter: brightness(1);
+    transition: transform 1s;
+}
 @media screen and (max-width: 375px){
-    .galeria{
-        grid-template-columns: 1fr;
+    .Polaroid{
+        width: 300px;
+        height: 250px;
+    }
+}
+@media screen (min-width: 667px){
+    body{
+        background-color: red;
     }
 }
