@@ -1,0 +1,31 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.title{
+    background-color: blueviolet;
+    text-align: center;
+}
+.Contenedor{
+    display: grid;
+    grid-gap: 10px;
+    padding: 10px;
+}
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-gap: 10px;
+}
+.Polaroid{
+    width: 100%;
+    min-height: 300px;
+    display: grid;
+    background-color: aquamarine;
+}
+
+@media screen and (max-width: 375px){
+    .galeria{
+        grid-template-columns: 1fr;
+    }
+}
