@@ -150,6 +150,15 @@ body{
     .texto1{
         margin-top:-10px; 
     }
+    #desarrollador{
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #desarrollador>h3{
+        font-size: 1em;
+    }
 }
 @media screen and (max-width: 350px){
     .galeria{
@@ -170,6 +179,7 @@ body{
         padding:15px;
     }
     #desarrollador{
+        height: 50px;
         display: flex;
         justify-content: center;
         align-items: center;
