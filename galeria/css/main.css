@@ -53,7 +53,7 @@ body{
 }
 .Polaroid{
     position: relative;
-    width: 320px;
+    width: 325px;
     height: 260px;  
     padding: 10px 10px 45px 10px;
     background-color: white;
@@ -67,7 +67,7 @@ body{
 .Polaroid img{
     cursor: pointer;
     transition: filter 1s;
-    filter: brightness(0.1);
+    filter: brightness(0);
 }
 .Polaroid img:hover{
     filter: brightness(1);
@@ -114,20 +114,23 @@ body{
     margin-left: 5px;
     margin-right: 5px;
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 868px){
     .galeria{
         display: grid;
         grid-template-columns: repeat(2, 1fr);;
         justify-content: center;
     }
     .Polaroid{
-        width: 250px;
-        height: 200px;
+        width: 270px;
+        height: 210px;
         padding: 10px 10px 40px 10px;
         margin: 10px;
     }
     .texto1{
         margin-top:-10px; 
+    }
+    .text2{
+        font-size: 0.88em;
     }
 }
 @media screen and (max-width: 500px){
@@ -160,6 +163,9 @@ body{
         font-size: 1em;
         margin: 0;
     }
+    .text2{
+        font-size: 0.9em;
+    }
 }
 @media screen and (max-width: 350px){
     .galeria{
@@ -188,5 +194,8 @@ body{
     #desarrollador>h3{
         font-size: 1em;
         margin: 0;
+    }
+    .text2{
+        font-size: 0.9em;
     }
 }
