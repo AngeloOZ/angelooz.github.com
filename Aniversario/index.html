@@ -1,38 +1,83 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  <title>Aniversario!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>❤️Feliz Aniversario❤️</title>
 
-  <link rel="stylesheet" href="styles/flexbox-center-container.css" media="all">
-  <link rel="stylesheet" href="styles/system-fonts.css" media="all">
-  <link rel="stylesheet" href="styles/style.css" media="all">
+    <link rel="stylesheet" href="./css/estilos.css">
 </head>
-
 <body>
-  <canvas id=c></canvas>
-  <canvas id="confetti"></canvas>
-  <div class="container" id="count">
-    <h1 id="head">Cuenta atrás para nuestro Aniversario!</h1>
-    <ul>
-      <li><span id="day"></span>Día</li>
-      <li><span id="hour"></span>Horas</li>
-      <li><span id="minute"></span>Minutos</li>
-      <li><span id="second"></span>Segundos</li>
-    </ul>
-  </div>
-  <div id="merrywrap" class="merrywrap">
-    <canvas id="snowfall"></canvas>
-    <div class="giftbox">
-      <div class="cover">
-        <div></div>
-      </div>
-      <div class="box"></div>
+    <div class="moom">
+        <div class="crater1"></div>
+        <div class="crater2"></div>
+        <div class="crater3"></div>
     </div>
-</body>
-<script src="scripts/confetti.min.js" charset="utf-8"></script>
-<script src="scripts/index.js" charset="utf-8"></script>
+    <canvas id="canvas"></canvas>
 
+    <div id="sea"></div>
+    <div id="beach"></div>
+
+    <!-- 
+    <img src="https://www.clipartmax.com/png/full/289-2899351_corazones-varios-corazones-png.png " alt="Jumping-people" id="people" />     
+    	-->
+    <img src="./css/img3.png" alt="Jumping-people" id="people"/>
+    <div id="merrywrap" class="merrywrap">
+        <div class="giftbox">
+            <div class="cover">
+                <div></div>
+            </div>
+            <div class="box"></div>
+        </div>
+        <div class="icons">
+            <div class="row">
+                <span>F</span>
+                <span>E</span>
+                <span>L</span>
+                <span>I</span>
+                <span>Z 1er</span>
+            </div>
+            <!--<div class="row">
+                <span> PRIMER</span>
+            </div>-->
+            <div class="row">
+                <span>A</span>
+                <span>N</span>
+                <span>I</span>
+                <span>V</span>
+                <span>E</span>
+                <span>R</span>
+                <span>S</span>
+                <span>A</span>
+                <span>R</span>
+                <span>I</span>
+                <span>O</span>
+            </div>
+            <div class="row">
+                <span>❤️A</span>
+                <span>M</span>
+                <span>O</span>
+                <span>R</span>
+                <span>C</span>
+                <span>I</span>
+                <span>T</span>
+                <span>O❤️</span>
+            </div>
+            <div class=" row">
+                <span></span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="dateB">
+        <span id="days"></span><br>
+        <span id="hours"></span><br>
+        <span id="minutes"></span><br>
+        <span id="seconds"></span><br>
+    </div>
+
+    <div id="video"></div>
+
+    <script src="./js/index.js"></script>
+</body>
 </html>
