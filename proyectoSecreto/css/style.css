@@ -59,5 +59,9 @@
         width: 40%;
         border: tomato solid 1px;
     }
+    .scroll-title{
+        top: 120px;
+    }
+
 
 }
