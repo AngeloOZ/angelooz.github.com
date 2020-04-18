@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=}, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="./css/swiper.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <h2 class="scroll-title">Scroll para revelar los secretos...</h2>
+    <div class="banner">
+        <div class="imagen"></div>
+        <div id="bg"></div>
+    </div>
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <h2>Mis momentos favoritos contigo<span id="heart">❤</span></h2>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="imBx">
+                    <img src="./gallery/0.jpg" class="imgSlide">
+                </div>
+                <div class="details">
+                    <h3>Milena Ballesteros<br><span>Web Designer</span></h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imBx">
+                    <img src="./gallery/1.jpg" class="imgSlide">
+                </div>
+                <div class="details">
+                    <h3>Milena Ballesteros<br><span>Web Designer</span></h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imBx">
+                    <img src="./gallery/2.jpg" class="imgSlide">
+                </div>
+                <div class="details">
+                    <h3>Milena Ballesteros<br><span>Web Designer</span></h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imBx">
+                    <img src="./gallery/3.jpg" class="imgSlide">
+                </div>
+                <div class="details">
+                    <h3>Milena Ballesteros<br><span>Web Designer</span></h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imBx">
+                    <img src="./gallery/4.jpg" class="imgSlide">
+                </div>
+                <div class="details">
+                    <h3>Milena Ballesteros<br><span>Web Designer</span></h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imBx">
+                    <img src="./gallery/5.jpeg" class="imgSlide">
+                </div>
+                <div class="details">
+                    <h3>Milena Ballesteros<br><span>Web Designer</span></h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imBx">
+                    <img src="./gallery/6.jpeg" class="imgSlide">
+                </div>
+                <div class="details">
+                    <h3>Milena Ballesteros<br><span>Web Designer</span></h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imBx">
+                    <img src="./gallery/7.jpeg" class="imgSlide">
+                </div>
+                <div class="details">
+                    <h3>Milena Ballesteros<br><span>Web Designer</span></h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imBx">
+                    <img src="./gallery/8.jpeg" class="imgSlide">
+                </div>
+                <div class="details">
+                    <h3>Milena Ballesteros<br><span>Web Designer</span></h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imBx">
+                    <img src="./gallery/12.jpeg" class="imgSlide">
+                </div>
+                <div class="details">
+                    <h3>Milena Ballesteros<br><span>Web Designer</span></h3>
+                </div>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/swiper.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 60,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    </script>
+</body>
+
+</html>
